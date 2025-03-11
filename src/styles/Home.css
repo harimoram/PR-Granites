@@ -272,13 +272,13 @@ body {
   
   .about-image {
     flex: 1;
-    padding: 20px;
+    padding: 0px;
     display: flex;
     justify-content: center;
   }
   
   .about-image img {
-    width: 90%;
+    width: 100%;
     max-width: 500px;
     border-radius: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -415,6 +415,7 @@ body {
 
 .extra-text .cta-button:hover {
     background-color: #ff0000;
+    align-items: center;
 }
 
 /* Extra Section Image Styling */
@@ -464,6 +465,13 @@ body {
     .extra-image img {
         max-width: 100%; /* Make image responsive */
     }
+
+        /* Center Align the CTA Button */
+        .extra-text .cta-button {
+          display: block; /* Make it a block element */
+          margin: 20px auto; /* Center it horizontally */
+          text-align: center; /* Align text inside button */
+      }
 }
 
 
